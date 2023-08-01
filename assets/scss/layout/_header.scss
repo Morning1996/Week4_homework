@@ -1,0 +1,47 @@
+.nav {
+  background: $red;
+  padding: 16px 0;
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+  }
+  .nav-list {
+    display: flex;
+    align-items: center;
+  }
+  .logo {
+    width: 80px;
+  }
+  .nav-list .nav-item {
+    margin-left: 64px;
+  }
+  .nav-list .nav-link {
+    color: $white;
+  }
+}
+
+@include mobile {
+  .nav {
+    padding: 0;
+    .navbar {
+      padding: 0;
+      flex-direction: column;
+    }
+    .nav-list {
+      flex-wrap: wrap;
+    }
+    .logo {
+      margin: 16px 0 16px 16px;
+    }
+    .nav-list .nav-item {
+      text-align: center;
+      width: 50%;
+      border: 1px solid $white;
+      margin-left: 0px;
+    }
+    .nav-list .nav-link {
+      display: block;
+      padding: 12px 0;
+    }
+  }
+}

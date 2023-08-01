@@ -1,0 +1,116 @@
+.footer {
+  background: $red;
+  padding-top: 48px;
+  padding-bottom: 32px;
+  .social-list-mobile {
+    display: none;
+  }
+  a,
+  .privacy {
+    color: $white;
+  }
+  .about-store {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 24px;
+  }
+  .page-list {
+    display: flex;
+    align-items: center;
+  }
+  .social-list {
+    display: flex;
+  }
+  .page-item {
+    margin-right: 48px;
+  }
+  .social-list li {
+    width: 48px;
+    margin-left: 32px;
+  }
+  .contact {
+    margin-bottom: 32px;
+  }
+  .contact li {
+    margin-bottom: 8px;
+  }
+  .contact img {
+    width: 36px;
+  }
+  .contact a {
+    font-size: $fz-36;
+  }
+  .privacy {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 32px;
+  }
+  .privacy ul {
+    display: flex;
+    align-items: center;
+  }
+  .privacy li {
+    font-size: $fz-14;
+    margin-left: 48px;
+  }
+  hr {
+    margin: 0;
+  }
+}
+
+@include pad {
+  .footer {
+    background: $red;
+    padding-bottom: 40px;
+    .social-list li {
+      width: 40px;
+      margin-left: 16px;
+    }
+  }
+}
+@include mobile {
+  .footer {
+    padding-top: 24px;
+    padding-bottom: 24px;
+    .about-store {
+      display: none;
+    }
+    .about-store-mobile {
+      display: flex;
+      justify-content: space-between;
+    }
+    .social-list-mobile {
+      display: flex;
+    }
+    .social-list-mobile li {
+      width: 24px;
+      margin-left: 8px;
+    }
+    .contact {
+      margin-bottom: 24px;
+    }
+
+    .contact img {
+      width: 18px;
+    }
+    .contact a {
+      font-size: 16px;
+    }
+    .privacy {
+      flex-direction: column;
+      margin-top: 16px;
+    }
+    .privacy ul {
+      flex-direction: column;
+      align-items: start;
+    }
+    .privacy li {
+      font-size: 16px;
+      margin-left: 0;
+    }
+    .privacy p,
+    li {
+      margin-bottom: 8px;
+    }
+  }
+}
