@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Q&A</title>
+    <title>location-page</title>
     <script type="module" crossorigin src="/Week4_homework/assets/main-8db33f2f.js"></script>
     <link rel="stylesheet" href="/Week4_homework/assets/main-009ffc97.css">
   </head>
@@ -22,68 +22,52 @@
     </ul>
   </div>
 </nav>
-    <div class="qa container">
-      <h1>常見問題</h1>
-      <h2>我想詢問配鏡問題</h2>
-      <ul class="qa-list">
-        <li class="qa-item">
-          <h3 class="question">Q1.請問可否自備鏡框單配鏡片？</h3>
-          <p class="answer">
-            A1.我牌鏡框搭配薄型非球面鏡片 1480
-            元，搭配功能型鏡片則依鏡片種類加價購買。
-            當日購買JINS盒裝眼鏡，搭配薄型非球面鏡片 980 元（隔日後則為 1480
-            元），搭配功能型鏡片則依鏡片種類加價購買。
-            他牌鏡框，搭配薄型非球面鏡片 1980
-            元，搭配功能型鏡片則依鏡片種類加價購買。
-          </p>
-        </li>
-        <li class="qa-item">
-          <h3 class="question">Q2.眼鏡都可以20分鐘取件嗎？</h3>
-          <p class="answer">
-            A1.我牌鏡框搭配薄型非球面鏡片 1480
-            元，搭配功能型鏡片則依鏡片種類加價購買。
-            當日購買JINS盒裝眼鏡，搭配薄型非球面鏡片 980 元（隔日後則為 1480
-            元），搭配功能型鏡片則依鏡片種類加價購買。
-            他牌鏡框，搭配薄型非球面鏡片 1980
-            元，搭配功能型鏡片則依鏡片種類加價購買。
-          </p>
-        </li>
-        <li class="qa-item">
-          <h3 class="question">Q3.散光鏡片需要額外加價嗎？</h3>
-          <p class="answer">
-            A1.我牌鏡框搭配薄型非球面鏡片 1480
-            元，搭配功能型鏡片則依鏡片種類加價購買。
-            當日購買JINS盒裝眼鏡，搭配薄型非球面鏡片 980 元（隔日後則為 1480
-            元），搭配功能型鏡片則依鏡片種類加價購買。
-            他牌鏡框，搭配薄型非球面鏡片 1980
-            元，搭配功能型鏡片則依鏡片種類加價購買。
-          </p>
-        </li>
-        <li class="qa-item">
-          <h3 class="question">Q4.我可以使用舊眼鏡的度數配鏡片嗎？</h3>
-          <p class="answer">
-            A1.我牌鏡框搭配薄型非球面鏡片 1480
-            元，搭配功能型鏡片則依鏡片種類加價購買。
-            當日購買JINS盒裝眼鏡，搭配薄型非球面鏡片 980 元（隔日後則為 1480
-            元），搭配功能型鏡片則依鏡片種類加價購買。
-            他牌鏡框，搭配薄型非球面鏡片 1980
-            元，搭配功能型鏡片則依鏡片種類加價購買。
-          </p>
-        </li>
-        <li class="qa-item">
-          <h3 class="question">Q5.請問可以單購買鏡框嗎？</h3>
-          <p class="answer">
-            A1.我牌鏡框搭配薄型非球面鏡片 1480
-            元，搭配功能型鏡片則依鏡片種類加價購買。
-            當日購買JINS盒裝眼鏡，搭配薄型非球面鏡片 980 元（隔日後則為 1480
-            元），搭配功能型鏡片則依鏡片種類加價購買。
-            他牌鏡框，搭配薄型非球面鏡片 1980
-            元，搭配功能型鏡片則依鏡片種類加價購買。
-          </p>
-        </li>
-      </ul>
+    <div class="store-page container">
+      <h1>門市據點</h1>
+      <div class="select-store">
+        <label for="store-select">選擇分店</label>
+        <select name="store-select" id="store-select">
+          <option value="taipei">台北中山旗艦店</option>
+        </select>
+      </div>
+      <div class="store">
+        <div class="store-card">
+          <img
+            class="store-img"
+            src="/Week4_homework/assets/storepage-1-bd842520.png"
+            alt="store-img"
+          />
+          <div class="store-intro">
+            <h2 class="store-name">台北中山旗艦店</h2>
+            <ul class="store-info">
+              <li class="store-phone">
+                <img
+                  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAAAy1JREFUaEPtmVuoTUEYx3/nTXlSRKRQUsqD3FNEeHEJxYM8kHLJpZAHSm7lQbmERBQeJJR7uZSSItdCPPEgySXlQUqR6K9vaYy1Z89eZ9mzdu2vTuesNd+a+f1nvpn5Zk4HLW4dLc5PW0DqEWyPQNVH4CIwPQD5CjgObE4lJBRCe4GVkWBDgceRvqW6hQR8BbpEtrYcOBDpW6pbSMBzYLC1lud3FFhg5YeBxaWSRVYWEnAZmGr15IXIOmCHlT8ARka2WapbSMA+YIW1thA45rU8Ebhh774DXQH9bqqFBKwBdhrNHmB1DtkXA1fRKOB+U+khmErMBM4Z0E1gQg6cgEfY+6XAoSoJ6A58dIB6A+88QK3/m+zdlhT7Qb1U4jow2QD9pdKFl8tc4EyVRkAsi4AjOWHkwwtcAppu9UagL/DaoRpuqUUWNipKBq/G6wmQj5sPKc4rAx8rQHuB9gTfkvZ8BhMzAj2A28BAR0El4GNHQH5LgIMm4LNN2GtNn7E5DcaMQPaZgKfYg/6eAXxLLaIRAYJ3e11LqSZ1UmtEgEAVRgonmUJJou6lVNCoAE1kTWhNbNkFQDlTMmtUgEDd3VnPSVekIgIEvR1YX4VltagAsZ/y8p/9DVwClBZynREgCB0llR9lViSlVto+CVC6fhd4CuigFGWdFaBGPgHdCoqYA2wDBnm06phHwBPgjonKFVSGAFX8BujjtLAb0JE0ZII/HdHNHwCd9s7n+ZYlQHWfBWY5jZwENgC6vfPNhxfcD2As0CvHX6PhhuoflzIFqNKNwFYHQPCaF+6Nhg//EBgH6CJNpnDSBcFoYJlTVy5r2QLUnq4jdS3pmgTo5q6fFzbvgWHA2xqh9DOFALU5H9jl7Nh6p9GQANeGAM8C8yCZADEp7Vjr5E4+53jgVgBeRUkFZGxK+CQkS8Vd5qu2IZ6ocatXCQEZsLJYCXFPdq6YK8BL4IXd8CnLrZQAwSqLnQdMs923TgT9Vdy0VSgWqj8w2/YOrf8hu2QnwH98/scyGivA9esJjAEGABKW/ehZ/3tYVavSqggoIvr3N20BhbuupA/bI1BSRxaupuVH4BcP84AxQrxLcwAAAABJRU5ErkJggg=="
+                  alt="phone"
+                />電話：(02)000-1234
+              </li>
+              <li class="store-open">
+                <img
+                  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAABH9JREFUaEPtmUvIVVUUx38fNHKgaTNfJDhSygJFc+AD8QGKmVmYjyysNFB8oIIPtECkMFOp6KGhloqYWolC2cBskAqKVuQoKHrNRG3gOP6w98f69t3nnL3PORYfuOBwL/euvdb6773X83TRy6mrl9vPfQD/9wm2eQKDgYnAaOBh8wjjb+a5AlwA/mwDfFMAI4CXgPHA2EyDLgPfA/uBG5lru9nrAugLrAXWAPrehP4BdgNvA/qeRXUALAA2ASMDTb8AR4A/3PXwn2LT9RpiPhcCw4P1PwNvAp/mIMgFsBnYHij4DjjsjL+bqLwPIBCLgAnBmreA9YlyssLoa8A2I/gmsAw4maqsgO9p4EPgIfP/aeDJFLmpJ/CKU+Jl/gTMb+J8gXEKBseAR8zvnwBLqkCkAHgGOG4EfQY8WyW45v/SI32eXgU+KJNVBSA0/l1gZU3jUpe9A6wwzM+504muLwOg8Kg47aPNN8C0VCuASYHPTM5Yew6Y6vgVnZRnoiG2DIB1WoXEJ4C/MowQgPOO/1sgB8Ag4KILvRLxOiB7OqgIgJxKAnySmgt8nmG8WJsA0PqngFNOp3ZfG9iRsYsAKDOudosV51Xj5FJTANKnmsnniT0u8/ewowjANeAxx6kQui/X+hZOQCpfBj5yuq8Dj4d2xACokvzVMao8GAWkZlgrv40TUMb+wZQdw1xV260nBuAF4IDjKHSehBNpA4DU2GDyInDQ6o4BsPdfpYI/wgSbe7C0BcBWAR1+EAOgaDPHmTILOJtrueNvC8BM4IyT+YWLTqVXyDrwo4DqnjrUFgDVRz8WOXLsBG4BD7oF+rxTx/qWopBU9wNuOxv02b/KBywALc7ukiJXSD8ddT1A7n4omfpNTAJgr5DqoNr9KrDU9bzeaEUQRZIcUlWgekjUkQuqnHgG8HWOtgiveudd5nclRUWWVJoOfJXjxDaMauLwcaqmEj7lk63m//eCkrlMhT3FpDCqXlU9rqhJIguNkvJV5sdobRNBYhOZemgNDropdoU0QVD5LGpSSsR2VRlemd7TTmBDyfaHpYQmGz0GYkXF3CUzqKpbzBXZpRJZpbKnHYCmHTGyxZwGYeNCpiIAGjJpaCWqW04XAXjAOeUUw1B0VW05Ld9UQOhBqQ3NvBbGJ1bxAAdiTImfadxywi3Kbmi0zjqPZkBqLJrkhHDzVLbLH2KtomK/Tt7PirJbSikLm3rVRKqN/gtS7eNnRLWbehm6GNCAydO9nAl5HeFsqKMHsDtYNRcSr0LdOrPoXs6GwplQZemRAkC2fwnMNiA0I9LO5IxZyq6exijKEX4WJF69FFELWUqpACTkEPC8kaZkp8yaO24JDVJO2GtmQPr/qnvTU2V/1nRawpYD7wdS2x6vbwTeqLTcMeScgJepqfSWkhccf7ur9TugRzTUPboqA11fEHvBoaysviGZ6gCQ8F79isnujhKO6hX1v34Qlrp7ak40M1V/UDtB1j2BmJHKrAKiQVjZa1YNqmS4okxjahNAY2PqCLgPoM6utbmm15/AvyaA5jGhd6O4AAAAAElFTkSuQmCC"
+                  alt="clock"
+                />營業時間：10:00-21:00
+              </li>
+              <li class="store-address">
+                <img
+                  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAABDpJREFUaEPtmVvIVkUUhp8flCAVVEIv9CJLSQr1wjRPFyKVqaAoqSmoUaiVhpGaKEpGkWgHksxDoVhCHikUMk9EF1qWdWGSGGp5URdJqGAKoZC8sjaM2+/7Zs3e+0N+cMHmP+x1emfWrHlndgutXFpaef7cBXCnZ7DqGZgIDAa6Aw/YI4y/2/Mn8D2wsyrgVQB4GJgEPA084kzsV2AXsAM46bSpqVYWwJvA0jIJAG8By4r6KArgXuAb4LFc4FPAduA0cMZ+SqUX0NOeZ4DeObsfgBHA1VQgRQA8ChzLBfoK2GbP9UgSbQCB0DMmpzsA+CkFRCoAjfyVXID3gAUpQQPdd4H5Odt2KTORCkCjPDkIOMS6SsH8b5qpa30XOFAJanZckgLgbWBx4FU1fdYVJa70oK2ZTHMFsCRuhnsnfgg4DtxjTucAaz0BEnReAj4y/f+AfsBvMXvvDITt8mtgdMxxwfd7gVFm62qvHgAdbPR7mOMXgfUFE4yZvQCsM6U/bBYuNzLyAFDCWbn8C3QGrsUyKfi+LXABaG/2KqsMUE2XHgBrANW85BNgljM59fQ+pnuixt5Rz83HwEx7qTUxt+wMfAGMNyezAQWIyXLg9ZzSG4D+HxMN0AZT+hKYUBaAtvmB5uQJ4FAkg762ZmqpqbP8ErF/HDhoOj/WoCu3mHtKSBS4m1mpX4saN5KwHeb1PO1XNDzbX/4yal43ngfA/4G1R/85YGOdiM8Dm2I1BLhjehISw9RGJvGUgBavpr6WqBTzRDCvF5agNrI8c00uod3AWLOaDmxxjGCZRTwN+Mxi7AHGlV3EK4HXzInY40IHAKloJIeZ7mHH4s3cvhOw21XAorIAhgJKQHIAGOkEUFRtP/CkGWsAjpQFIHtt6/ebo6nA1qLZReymAJ+bzjkgoy91zTyLWMY6tLxqXrQvDGoSgKNB33+/xmHntrBeAE8BYqGZvAKsrhjEPOCDwKdY6b5YDC8A+VFvV4/PSkqzcD4WwPm+C6DRz0pGe4X2jKikANBeoMV8n3kVXxH9rUJEz8WzJP9Y94oeZqScAkD6aqdqq5m8DIitlhGxzQ8DB2qbap8uSQUgp2Gb09FP6+NbV7TblYZbnWdH1eQ2XQSANigF6mr5/GwgNPUpolLUIu1vRn9b/4+x1VtiFAEgB+F2r78/BZ5NyR7YDMwIbLw0pRIAchJu+frbe2CRbp4rpVCUygDIUUj0vCDyyUcJW6OZLVpCoU/dqul2LZNGM5FPXt8KdLtXWKoAoOC6jdZNXSZKVEBC0Rk5PBPr9lq31qWkKgBK4iLQsQ6IfPKXgE6lMjfjKgHIpe6NdLsclpN+D28odLud3fuUxlA1ACUUMsp8gpUz2WYAUNIh8ctAuAlayrQ0C4ByCD9elPkI0hBPMwEosG6YJWU/BNYF0WwAKdVQSPcugELDVqFRq5+BG7tdsTH2BOGWAAAAAElFTkSuQmCC"
+                  alt="location"
+                />地址：台北市中山區南京東路25巷2-1號
+              </li>
+            </ul>
+          </div>
+        </div>
+        <img
+          class="map"
+          src="/Week4_homework/assets/map@2x-dc2516bb.png"
+          alt="map"
+        />
+      </div>
     </div>
-
     <!-- <footer class="footer">我是 footer</footer> -->
 <footer class="footer">
   <div class="container">
