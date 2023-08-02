@@ -1,0 +1,96 @@
+.store-page {
+  padding-top: 96px;
+  padding-bottom: 80px;
+  h1 {
+    font-size: $fz-48;
+    font-weight: 700;
+    border-left: 8px solid #9f1213;
+    padding-left: 16px;
+    margin-bottom: 32px;
+  }
+  .select-store {
+    margin-bottom: 40px;
+    label {
+      margin-right: 16px;
+      font-size: $fz-24;
+    }
+    select {
+      width: 304px;
+      height: 38px;
+      opacity: 0.8;
+    }
+  }
+  .store {
+    display: flex;
+    justify-content: space-between;
+  }
+  .store-card {
+    width: 40%;
+  }
+  .map {
+    width: 58%;
+  }
+  .store-intro {
+    border: 1px solid #00000020;
+    .store-name {
+      font-size: $fz-24;
+      padding: 8px 0 8px 24px;
+      border-bottom: 1px solid #00000020;
+    }
+    .store-info {
+      font-size: $fz-20;
+      padding: 16px 24px;
+      li {
+        margin-bottom: 8px;
+      }
+      & img {
+        width: 18px;
+        margin-right: 8px;
+      }
+    }
+  }
+}
+@include pad {
+  .store-page {
+    padding-top: 80px;
+    .store {
+      flex-wrap: wrap;
+    }
+    .store-card {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      margin-bottom: 24px;
+      .store-img,
+      .store-intro {
+        width: 49%;
+      }
+    }
+    .map {
+      width: 100%;
+    }
+  }
+}
+@include mobile {
+  .store-page {
+    padding: 40px 12px 64px 12px;
+    h1 {
+      font-size: $fz-24;
+      margin-bottom: 24px;
+    }
+    .select-store {
+      margin-bottom: 24px;
+      label {
+        margin-right: 8px;
+        font-size: 16px;
+      }
+    }
+    .store-card {
+      flex-wrap: wrap;
+      .store-img,
+      .store-intro {
+        width: 100%;
+      }
+    }
+  }
+}
